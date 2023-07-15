@@ -1,0 +1,32 @@
+48 anotherFunc is not a method
+
+Remember this in JavaScript, our lexical scope that is available data variables where the function
+
+was defined determines our available variables, not where the function is called, which is called
+
+dynamic scoping.
+
+But there's actually a little footnote to this statement, right?
+
+Because everything in JavaScript is actually lexical scoped.
+
+Arrow functions are lexically bound.
+
+With let and const keywords we get block scoping.
+
+JS just has lexical scope, except for this keywoard that has dynamic scoping.
+The this value is determined when the function is invoked.
+
+61.
+Just like python. Everything passes by reference. The number and the string doesn't change 
+because inside the function, the references are discarded, and number and string 
+are new numbers and strings with the new values. The scope doesn't extend past the function 
+and they pop off the stack at the end. Line 14 the reference inside the function gets overwritten. 
+obj1 (the copy inside the function) gets reassigned the memory location of obj2. 
+obj2.value reference is swapped to "c".
+
+21 no change 22 no change
+23 obj was never changed. The reference still exists outside since we only pass in a copy 
+of the reference.
+If we console log obj2, it has in fact been changed. Value is changed on line 15 
+That is obj2 is mutated there. the value reference points to something else.
